@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/circles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/circles"
+        android:src="@drawable/circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="92dp"
+        android:contentDescription="@string/welcome_back"
+        android:src="@drawable/people"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WelcomeB"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/WelcomeB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="137dp"
+        android:fontFamily="@font/poppins_500"
+        android:lineHeight="27sp"
+        android:text="@string/welcome_back"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circles"
+        tools:targetApi="p" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/enterEm"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="33dp"
+        android:textColorHint="@color/black"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/people">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="emailAddress"
+            android:fontFamily="@font/poppins_400"
+            android:hint="@string/enter_your_email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="35dp"
+            android:textSize="14sp"
+            tools:targetApi="p" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirmP"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="33dp"
+        android:textColorHint="@color/black"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterEm">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_400"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:paddingStart="35dp"
+            android:textSize="14sp"
+            tools:targetApi="p" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/forgot_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="62dp"
+        android:fontFamily="@font/poppins_700"
+        android:gravity="center_horizontal|top"
+        android:text="@string/fogot_pass"
+        android:textColor="@color/yellow2"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmP" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/singIn"
+        android:layout_width="309dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="33dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/poppins_700"
+        android:text="@string/sign_in"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgot_pass"
+        tools:targetApi="p" />
+
+    <TextView
+        android:id="@+id/dontHave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="59dp"
+        android:fontFamily="@font/poppins_400"
+        android:gravity="center_horizontal|top"
+        android:text="@string/don_t_have_"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singIn" />
+
+    <TextView
+        android:id="@+id/SingUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="59dp"
+        android:fontFamily="@font/poppins_700"
+        android:gravity="center"
+        android:text="@string/sing_up"
+        android:textColor="@color/yellow2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dontHave" />
+</androidx.constraintlayout.widget.ConstraintLayout>

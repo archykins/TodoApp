@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@color/grey">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    >
+    <ImageView
+        android:id="@+id/circles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/circles"
+        android:src="@drawable/circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/WelcomeB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginEnd="137dp"
+        android:fontFamily="@font/poppins_500"
+        android:lineHeight="27sp"
+        android:text="@string/welcome_back"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circles"
+        tools:targetApi="p" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_400"
+        android:lineHeight="26sp"
+        android:text="@string/we_help_you_meet_up_you_tasks_on_time"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WelcomeB" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/enterEm"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="33dp"
+        android:textColorHint="@color/black"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="emailAddress"
+            android:fontFamily="@font/poppins_400"
+            android:hint="@string/enter_your_full_name"
+            android:inputType="textEmailAddress"
+            android:paddingStart="35dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:targetApi="p" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirmP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="33dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterEm"
+        app:boxBackgroundColor="@color/white"
+        android:textColorHint="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="35dp"
+            android:fontFamily="@font/poppins_400"
+            android:hint="@string/enter_your_email"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            tools:targetApi="p" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginTop="26dp"
+        android:textColorHint="@color/black"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmP">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_400"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword"
+            android:paddingStart="35dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:targetApi="p" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text4"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="33dp"
+        android:textColorHint="@color/black"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_400"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:paddingStart="35dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:targetApi="p" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/singIn"
+        android:layout_width="309dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="33dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/poppins_800"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text4"
+        tools:targetApi="p" />
+
+    <TextView
+        android:id="@+id/dontHave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="90dp"
+        android:fontFamily="@font/poppins_400"
+        android:textColor="@color/black"
+        android:text="@string/already_have_an_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singIn"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="3dp"
+        android:fontFamily="@font/poppins_700"
+        android:text="@string/sing_up"
+        android:textColor="@color/yellow2"
+        app:layout_constraintStart_toEndOf="@+id/dontHave"
+        app:layout_constraintTop_toBottomOf="@+id/singIn" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
