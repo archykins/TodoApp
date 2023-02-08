@@ -23,7 +23,7 @@
         />
 
     <TextView
-        android:id="@+id/WelcomeB"
+        android:id="@+id/textViewWelcomeback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -51,14 +51,14 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WelcomeB" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewWelcomeback" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/enterEm"
+        android:id="@+id/textInputLayoutFullname"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="66dp"
+        android:layout_marginTop="30dp"
         android:layout_marginStart="31dp"
         android:layout_marginEnd="33dp"
         android:textColorHint="@color/black"
@@ -74,7 +74,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/enterEmail"
+            android:id="@+id/textInputEditEFullname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints="emailAddress"
@@ -89,7 +89,7 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/confirmP"
+        android:id="@+id/textLayoutEnterEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
@@ -101,7 +101,7 @@
         app:boxCornerRadiusBottomStart="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enterEm"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutFullname"
         app:boxBackgroundColor="@color/white"
         android:textColorHint="@color/black"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -109,7 +109,7 @@
         app:boxStrokeWidthFocused="0dp"
         >
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/confirmPass"
+            android:id="@+id/textInputEditEnterEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="35dp"
@@ -122,7 +122,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text3"
+        android:id="@+id/textInputLayoutEnterpass"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -139,10 +139,10 @@
         app:boxStrokeWidthFocused="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirmP">
+        app:layout_constraintTop_toBottomOf="@+id/textLayoutEnterEmail">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editText3"
+            android:id="@+id/textEditEnterpass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_400"
@@ -155,7 +155,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text4"
+        android:id="@+id/textInputLayoutConfirmpass"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -172,10 +172,10 @@
         app:boxStrokeWidthFocused="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text3">
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutEnterpass">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editText4"
+            android:id="@+id/textEditConfirmpass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_400"
@@ -189,7 +189,7 @@
 
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/singIn"
+        android:id="@+id/materialButtonRegister"
         android:layout_width="309dp"
         android:layout_height="70dp"
         android:layout_marginStart="33dp"
@@ -204,11 +204,11 @@
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text4"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutConfirmpass"
         tools:targetApi="p" />
 
     <TextView
-        android:id="@+id/dontHave"
+        android:id="@+id/textViewDontHave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -219,10 +219,11 @@
         android:text="@string/already_have_an_account"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/singIn"
+        app:layout_constraintTop_toBottomOf="@+id/materialButtonRegister"
         />
 
     <TextView
+        android:id="@+id/textViewSingup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -230,8 +231,8 @@
         android:fontFamily="@font/poppins_700"
         android:text="@string/sing_up"
         android:textColor="@color/yellow2"
-        app:layout_constraintStart_toEndOf="@+id/dontHave"
-        app:layout_constraintTop_toBottomOf="@+id/singIn" />
+        app:layout_constraintStart_toEndOf="@+id/textViewDontHave"
+        app:layout_constraintTop_toBottomOf="@+id/materialButtonRegister" />
 
 
 

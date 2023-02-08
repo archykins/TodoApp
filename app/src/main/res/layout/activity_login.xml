@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:background="@color/grey">
 
     <ImageView
         android:id="@+id/circles"
@@ -26,11 +27,11 @@
         android:src="@drawable/people"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WelcomeB"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWelcomeback"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/WelcomeB"
+        android:id="@+id/textViewWelcomeback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="97dp"
@@ -47,7 +48,7 @@
         tools:targetApi="p" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/enterEm"
+        android:id="@+id/textInputLayoutEnterEmail"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -67,7 +68,7 @@
         app:layout_constraintTop_toBottomOf="@+id/people">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/enterEmail"
+            android:id="@+id/textInputEditEnterEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints="emailAddress"
@@ -81,7 +82,7 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/confirmP"
+        android:id="@+id/textInputLayoutEnterPass"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -98,10 +99,10 @@
         app:boxStrokeWidthFocused="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enterEm">
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutEnterEmail">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/confirmPass"
+            android:id="@+id/textInputEditEnterPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_400"
@@ -114,7 +115,7 @@
 
 
     <TextView
-        android:id="@+id/forgot_pass"
+        android:id="@+id/textViewForgotpass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="53dp"
@@ -127,11 +128,11 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirmP" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutEnterPass" />
 
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/singIn"
+        android:id="@+id/materialButtonSingin"
         android:layout_width="309dp"
         android:layout_height="70dp"
         android:layout_marginStart="33dp"
@@ -146,11 +147,11 @@
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/forgot_pass"
+        app:layout_constraintTop_toBottomOf="@+id/textViewForgotpass"
         tools:targetApi="p" />
 
     <TextView
-        android:id="@+id/dontHave"
+        android:id="@+id/textViewDontHave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
@@ -162,10 +163,10 @@
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/singIn" />
+        app:layout_constraintTop_toBottomOf="@+id/materialButtonSingin" />
 
     <TextView
-        android:id="@+id/SingUp"
+        android:id="@+id/textViewSingup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
@@ -177,5 +178,5 @@
         android:textColor="@color/yellow2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dontHave" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewDontHave" />
 </androidx.constraintlayout.widget.ConstraintLayout>
