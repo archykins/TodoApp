@@ -6,7 +6,7 @@ import com.google.android.material.textfield.TextInputEditText
 
 
 fun Activity.validateMy(text: Editable?):String?{
-    return if (text.toString().isNotEmpty() && text.toString().length > 7 && text.toString().contains("@")) null
+    return if (text.toString().isNotEmpty() && text.toString().length >= 7 && text.toString().contains("@")) null
     else if (text.toString().isEmpty()) "The field cannot be empty"
     else if (text.toString().length<7)"The field must contain more than 7 characters"
     else "The email must contain @"
