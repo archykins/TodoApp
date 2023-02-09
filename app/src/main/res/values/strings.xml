@@ -3,7 +3,7 @@
     <string name="sign_in">Sign In</string>
     <string name="welcome_back">Welcome Back</string>
     <string name="enter_your_email">Enter your email</string>
-    <string name="Confirm_password">Confirm password</string>
+    <string name="confirm_password">Confirm password</string>
     <string name="fogot_pass">Fogot Password</string>
     <string name="circles">circles</string>
     <string name="don_t_have_">Don’t have an account? </string>
@@ -16,4 +16,11 @@
     <string name="previous">Previous</string>
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="welcome_onboard">Welcome onboard!</string>
+    <string name="we_help_you_meet_up_you_tasks_on_time">We help you meet up you tasks on time.</string>
+    <string name="enter_your_full_name">Enter your full name</string>
+    <string name="enter_password">Enter password</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account">Already have an account?</string>
+
 </resources>
