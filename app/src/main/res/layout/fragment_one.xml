@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    tools:context=".extensions.OneFragment"
+    android:background="@color/yellow2"
+    >
+
+    <ImageView
+        android:id="@+id/circle2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/circle2"
+        />
+
+    <ImageView
+        android:id="@+id/logOut"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/log_out"
+        android:layout_marginStart="336dp"
+        android:layout_marginTop="54dp"
+
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        android:layout_marginStart="137dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginBottom="63dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewWelcomeName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="205dp"
+        android:textSize="18dp"
+        android:text="@string/welcome_onboard"
+        android:fontFamily="@font/poppins_500"
+        android:textColor="@color/black"
+        />
+
+
+
+</FrameLayout>
