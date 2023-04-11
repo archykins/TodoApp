@@ -5,10 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.todoapp.databinding.ActivityRegistrationBinding
-import com.example.todoapp.extensions.validateConfirm
-import com.example.todoapp.extensions.validateFullname
-import com.example.todoapp.extensions.validateMy
-import com.example.todoapp.extensions.validatePass
+import com.example.todoapp.extensions.*
 
 class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegistrationBinding
@@ -27,8 +24,14 @@ class RegisterActivity : AppCompatActivity() {
             binding.textLayoutEnterEmail.error = emailer
             binding.textInputLayoutEnterpass.error = passer
             binding.textInputLayoutConfirmpass.error = confirmer
+            binding.materialButtonRegister.setOnClickListener{
             if (emailer == null && passer == null && fullname == null && confirmer == null) {
                 Toast.makeText(this, "Success!", Toast.LENGTH_SHORT).show()
+
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                }
+
             }
         }
 
@@ -36,6 +39,7 @@ class RegisterActivity : AppCompatActivity() {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
+
 
     }
 }

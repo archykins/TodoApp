@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TwoFragment"
+    android:background="@color/grey">
+
+
+    <ImageView
+        android:id="@+id/circle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginTop="235dp"
+        android:src="@drawable/book" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="368dp"
+        android:fontFamily="@font/poppins_700"
+        android:gravity="center_horizontal|top"
+        android:text="@string/no_history"
+        android:textColor="@color/dark_grey"
+        android:textSize="32sp" />
+
+
+</FrameLayout>
