@@ -24,9 +24,10 @@ class RegisterActivity : AppCompatActivity() {
             binding.textLayoutEnterEmail.error = emailer
             binding.textInputLayoutEnterpass.error = passer
             binding.textInputLayoutConfirmpass.error = confirmer
+            binding.materialButtonRegister.setOnClickListener{
             if (emailer == null && passer == null && fullname == null && confirmer == null) {
                 Toast.makeText(this, "Success!", Toast.LENGTH_SHORT).show()
-                binding.materialButtonRegister.setOnClickListener{
+
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                 }

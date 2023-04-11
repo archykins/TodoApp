@@ -1,9 +1,7 @@
-package com.example.todoapp.extensions
+package com.example.todoapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.todoapp.FragmentThree
-import com.example.todoapp.R
 import com.example.todoapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -35,7 +33,6 @@ class MainActivity : AppCompatActivity() {
                         .commit()
                         true
                 }
-
 
                 else-> {
                     true
